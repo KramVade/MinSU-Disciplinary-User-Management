@@ -1,0 +1,78 @@
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.welcome-card {
+  width: min(100%, 56rem);
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid #dce8e2;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 1.5rem 4rem rgb(20 83 45 / 8%);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #047857;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 42rem;
+  margin: 0;
+  color: #14251c;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.intro {
+  max-width: 38rem;
+  margin: 1rem 0 2rem;
+  color: #52635a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.area-card {
+  padding: 1.25rem;
+  border: 1px solid #e3ebe6;
+  border-radius: 1rem;
+  background: #f8fbf9;
+}
+
+.area-card h2 {
+  margin: 0 0 0.5rem;
+  color: #14532d;
+  font-size: 1rem;
+}
+
+.area-card p,
+.setup-note {
+  margin: 0;
+  color: #52635a;
+  line-height: 1.5;
+}
+
+.setup-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem;
+  }
+}
